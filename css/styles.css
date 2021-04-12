@@ -128,8 +128,6 @@ h6 {
 }
 
 .site-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -158,7 +156,20 @@ h6 {
 .menu-link {
   color: var(--color-text);
   display: block;
-  padding: 5px 0;
+  padding: 32px 0;
+  position: relative;
+}
+
+.menu-link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 0;
+  background-color: var(--color-accent);
+  border-radius: 2px;
 }
 
 .contacts {
@@ -180,17 +191,17 @@ h6 {
   color: var(--color-accent);
 }
 
+.current::after {
+  height: 4px;
+}
+
 .hero {
   display: flex;
   align-items: center;
   min-height: 100vh;
   background-color: var(--color-background-dark);
   text-align: center;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg-min.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -296,8 +307,7 @@ h6 {
 .team > .item {
   --grid-item: 4;
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -353,8 +363,7 @@ h6 {
 .work-link:hover,
 .work-link:focus {
   display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-title {
@@ -397,8 +406,7 @@ h6 {
 .fiter-button:focus {
   color: var(--color-text-w);
   background-color: var(--color-accent);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .member-social-list {
