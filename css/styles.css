@@ -145,9 +145,9 @@ h6 {
   margin-left: 93px;
 }
 
-/* .site-header .item:not(:last-child) {
-  margin-right: 50px;
-} */
+.site-header .link {
+  transition-property: color;
+}
 
 .site-header .item + .item {
   margin-left: 50px;
@@ -239,6 +239,8 @@ h6 {
   padding: 10px 32px;
   border-width: 0;
   border-radius: 4px;
+
+  transition-property: background-color;
 }
 
 .hero-button:hover,
@@ -299,6 +301,30 @@ h6 {
   font-size: 14px;
   line-height: 1.714;
   margin: 0;
+}
+
+.services .item {
+  position: relative;
+}
+
+.service-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-text-w);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .section-team {
@@ -432,6 +458,7 @@ h6 {
   cursor: pointer;
   border-width: 0;
   border-radius: 4px;
+  transition-property: color, background-color, box-shadow;
 }
 
 .fiter-button:hover,
@@ -458,6 +485,7 @@ h6 {
   border-radius: 50%;
   color: #afb1b8;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: color, background-color;
 }
 
 .social-item > a:hover,
@@ -480,6 +508,7 @@ h6 {
   box-shadow: 0 0 0 1px #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  transition-property: color, box-shadow;
 }
 
 .client-link:hover,
